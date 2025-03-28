@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Fabrication in Large Scale</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/electronics.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section id="overview" data-responsive="true">
+					<h2>Overview</h2>
+					<div class="menu-container">
+					  <a href="#/wafer" class="fragment fade-in menu-item" data-fragment-index="0">1. Wafer Manufacturing</a>
+					  <a href="#/oxidation" class="fragment fade-in menu-item" data-fragment-index="1">2. Oxidation</a>
+					  <a href="#/photolithography" class="fragment fade-in menu-item" data-fragment-index="2">3. Photolithography/Patterning</a>
+					  <a href="#/etching" class="fragment fade-in menu-item" data-fragment-index="3">4. Etching/Deposition</a>
+					  <a href="#/doping" class="fragment fade-in menu-item" data-fragment-index="4">5. Doping/Ion Implantation</a>
+					  <a href="#/metallization" class="fragment fade-in menu-item" data-fragment-index="5">6. Metallization/Interconnects</a>
+					  <a href="#/eds" class="fragment fade-in menu-item" data-fragment-index="6">7. Electrical Die Sorting</a>
+					  <a href="#/packaging" class="fragment fade-in menu-item" data-fragment-index="7">8. Passivation/Packaging</a>
+					</div>
+				</section>
+
+				<section id="wafer">
+					<!-- Vertical stack container -->
+					<section>
+					  <h2>1. Wafer Manufacturing</h2>
+						<div class="animation-container">
+							<video class="animation-media" autoplay muted loop playsinline>
+							  <source src="animation/0-WaferManufacturing.webm" type="video/webm">
+							</video>
+						</div>
+					</section>
+
+					<section>
+					  <h3>Silicon Preparation</h3>
+					</section>
+					
+					<section>
+					  <h3>Crystal Growth</h3>
+					</section>
+
+					<section>
+					  <h3>Wafer Slicing & Testing</h3>
+					  <p>Chemical-mechanical planarization...</p>
+					</section>
+				</section>
+
+				<section id="oxidation">
+					<h2>2. Oxidation</h2>
+					<div class="animation-container">
+						<video class="animation-media" autoplay muted loop playsinline>
+						  <source src="animation/1-Oxidation.webm" type="video/webm">
+						</video>
+					</div>
+				</section>
+
+				<section id="photolithography">
+					<h2>3. Photolithography/Patterning</h2>
+					<div class="animation-container">
+						<video class="animation-media" autoplay muted loop playsinline>
+						  <source src="animation/2-Photolithography.webm" type="video/webm">
+						</video>
+					</div>
+				</section>
+
+				<section id="etching">
+					<h2>4. Etching/Deposition</h2>
+				</section>
+
+				<section id="doping">
+					<h2>5. Doping/Ion Implantation</h2>
+				</section>
+
+				<section id="metallization">
+					<h2>6. Metallization/Interconnects</h2>
+				</section>
+
+				<section id="eds">
+					<h2>7. Electrical Die Sorting</h2>
+				</section>
+
+				<section id="packaging">
+					<h2>8. Passivation/Packaging</h2>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/menu/menu.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu ],
+
+				menu: {
+					side: 'left',
+					width: 'normal',
+					numbers: false,
+					titleSelector: 'h1, h2, h3, h4, h5, h6',
+					useTextContentForMissingTitles: false,
+					hideMissingTitles: false,
+					markers: true,
+					custom: false,
+					themes: false,
+					themesPath: 'dist/theme/',
+					transitions: false,
+					openButton: true,
+					openSlideNumber: false,
+					keyboard: true,
+					sticky: false,
+					autoOpen: true,
+					delayInit: false,
+					openOnInit: false,
+					loadIcons: true
+			}
+			});
+
+			Reveal.addEventListener('slidechanged', function(event) {
+			// Handle videos in the current slide
+			const currentVideos = event.currentSlide.querySelectorAll('video');
+			currentVideos.forEach(video => {
+				video.currentTime = 0; // Reset playback
+				video.play().catch(e => console.log("Autoplay prevented:", e));
+			});
+
+			// Pause videos in previous slide
+			if (event.previousSlide) {
+				const prevVideos = event.previousSlide.querySelectorAll('video');
+				prevVideos.forEach(video => video.pause());
+			}
+			});
+
+			Reveal.addEventListener('slidechanged', function(event) {
+			// Reset and play all videos in current slide
+			const currentSlideVideos = event.currentSlide.querySelectorAll('video[data-reveal-video]');
+			currentSlideVideos.forEach(video => {
+				if (video.readyState > 0) { // Only if loaded
+				video.currentTime = 0;
+				video.play();
+				} else {
+				video.addEventListener('loadedmetadata', () => {
+					video.currentTime = 0;
+					video.play();
+				});
+				}
+			});
+			});
+		</script>
+	</body>
+</html>
