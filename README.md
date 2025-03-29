@@ -6,7 +6,7 @@
 *(Image: Fractal patterns in silicon wafer under polarized light)*  
 
 ## 🌐 Live Presentation  
-[![GitHub Pages](https://img.shields.io/badge/Explore-Slides-royalblue?style=for-the-badge&logo=github)](https://your-username.github.io/repo-name)  
+[![GitHub Pages](https://img.shields.io/badge/Explore-Slides-royalblue?style=for-the-badge&logo=github)](https://sliaghat.github.io/Fabrication-in-Large-Scale)  
 
 ## 🔬 The Nano-Symphony  
 
