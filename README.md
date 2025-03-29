@@ -1,9 +1,6 @@
 # 🌀 IC Fabrication in Large Scale
 
-*A [Reveal.js](http://lab.hakim.se/reveal-js/) journey through the IC fabrication's fundamental process*  
-
-![Microchip Abstract Art](https://images.unsplash.com/photo-1620287343716-9f3a5cb9d54b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80)  
-*(Image: Fractal patterns in silicon wafer under polarized light)*  
+*A [Reveal.js](http://lab.hakim.se/reveal-js/) journey through the fundamental process of IC fabrication*  
 
 ## 🌐 Live Presentation  
 [![GitHub Pages](https://img.shields.io/badge/Explore-Slides-royalblue?style=for-the-badge&logo=github)](https://sliaghat.github.io/Fabrication-in-Large-Scale)  
