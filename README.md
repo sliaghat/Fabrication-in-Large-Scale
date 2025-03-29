@@ -7,21 +7,21 @@
 
 ## 🔬 The Nano-Symphony  
 
-This presentation unveils the hidden ballet of semiconductor fabrication across eight acts:  
+This presentation shows the fundamental process of semiconductor fabrication across eight acts:  
 
 | Stage | Transformation | Key Alchemy |
 |-------|---------------|-------------|
 | 1️⃣ **Wafer Manufacturing** | Sand → Single-Crystal Silicon → Wafer | Czochralski method |
-| 2️⃣ **Oxidation** | Silicon + O₂ → SiO₂ Gatekeeper | Thermal Rituals |
-| 3️⃣ **Photolithography** | Light + Resist → Nanoscale Masks | UV Shadowplay |
-| 4️⃣ **Etching** | Carving & Layering Atoms | Plasma Sculpting |
-| 5️⃣ **Doping** | Precision Impurity Injection | Quantum Gardening |
-| 6️⃣ **Metallization** | Neural Pathways Forged | Copper Veins |
-| 7️⃣ **EDS** | Silicon Darwinism | Electron Trials |
-| 8️⃣ **Packaging** | Chip → Civilization | Hermetic Sealing |
+| 2️⃣ **Oxidation** | - | - |
+| 3️⃣ **Photolithography** | - | - |
+| 4️⃣ **Etching** | - | - |
+| 5️⃣ **Doping** | - | - |
+| 6️⃣ **Metallization** | - | - |
+| 7️⃣ **EDS** | - | - |
+| 8️⃣ **Packaging** | - | - |
 
 ## ✨ Features  
 
-- **Animated Process Flows**: WebM visualizations of oxidation fronts and etch profiles  
-- **Foundry-Grade Data**: Defect density curves across nodes (180nm → 3nm)  
-- **Dark/Light Themes**: Optimized for projectors and tablets  
+- **Animated Process Flows**: WebM visualizations of the fabrication process
+- **Concept-First Design**: Each slide isolates one core idea (e.g., "Why we oxidize" before "How we oxidize").
+- **Zero Math Terror**: Equations appear only when absolutely necessary, always paired with visual metaphors. 
