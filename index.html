@@ -19,6 +19,27 @@
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+		<style>
+			table {
+			  font-family: arial, sans-serif;
+			  border-collapse: collapse;
+			  width: 100%;
+			  border-top: 1px solid #133E87;
+			  border-bottom: 1px solid #133E87;
+			  border-collapse: collapse;
+			}
+
+			td, th {
+			  border: 1px solid #133E87;
+			  text-align: left;
+			  padding: 8px;
+			}
+
+			tr:nth-child(even) {
+			  background-color: #133E87;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
@@ -63,12 +84,101 @@
 				</section>
 
 				<section id="oxidation">
-					<h2>2. Oxidation</h2>
-					<div class="animation-container">
-						<video class="animation-media" autoplay muted loop playsinline>
-						  <source src="animation/1-Oxidation.webm" type="video/webm">
-						</video>
-					</div>
+					<section>
+						<h2>2. Oxidation</h2>
+						<div class="animation-container">
+							<video class="animation-media" autoplay muted loop playsinline>
+							  <source src="animation/1-Oxidation.webm" type="video/webm">
+							</video>
+						</div>
+					</section>
+
+					<section>
+						<h3>Why oxidize?</h3>
+						<table>
+							<tr>
+								<td>Si has dangling bonds</td>
+								<td>SiO₂ creates bonds and passivates Si</td>
+							</tr>
+							<tr>
+								<td>We need doping masks and etch masks</td>
+								<td>SiO₂ blocks dopant diffusion</td>
+							</tr>
+							<tr>
+								<td>The wafer might break</td>
+								<td>SiO₂ is a shield</td>
+							</tr>
+						</table>
+					</section>
+
+					<section>
+						<h3>Growth Methods</h3>
+						<h4 align="left">Thermal Oxidation</h4>
+						<ul>
+							<li>The most common method</li>
+							<li>Involves heating silicon wafers in an oxygen-rich or steam environment</li>
+						</ul>
+					</section>
+
+					<section>
+						<div align="left">
+							<h4>I. Dry Oxidation (O₂ Environment)</h4>
+							Si + O₂ &#8594 SiO₂<br>
+							<ul>
+								<li>High-quality, dense SiO₂</li>
+								<li>Used for thin gate oxides</li>
+								<li>Slow growth<br><br></li>
+							</ul>
+
+							<h4>II. Wet Oxidation (H₂O / Steam Environment)</h4>
+							Si + 2H₂O &#8594 SiO₂ + 2H₂<br>
+							<ul>
+								<li>Steam introduced via H₂ + O₂ → H₂O</li>
+								<li>Less density and more defects</li>
+								<li>Thicker oxides</li>
+								<li>3 to 5 times faster</li>
+							</ul>
+						</div>
+					</section>
+
+					<section>
+						<h4 align="left">Other Methods</h4>
+						<table>
+							<tr>
+								<th>Name</th>
+								<th>Principle</th>
+								<th>Advantage</th>
+							</tr>
+							<tr>
+								<td>High-Pressure Oxidation</td>
+								<td>Raising Pressure</td>
+								<td>Faster growth at lower temperatures</td>
+							</tr>
+							<tr>
+								<td>Rapid Thermal Oxidation</td>
+								<td>Rapid Thermal Processing</td>
+								<td>Ultrathin and High-Quality</td>
+							</tr>
+							<tr>
+								<td>Plasma-Enhanced Oxidation</td>
+								<td>Plasma at Low Temperatures</td>
+								<td>Low Thermal Budget</td>
+							</tr>
+						</table>
+					</section>
+
+					<section>
+						<h3>Growth Kinetics: The Deal-Grove Model</h3>
+						tₒₓ² + A tₒₓ = B (t + τ)<br><br>
+						<div align="left">
+							<ul>
+								<li>tₒₓ = oxide thickness </li>
+								<li>A, B = rate constants</li>
+								<li>τ = initial native oxide correction</li>
+							</ul>
+						</div>
+					</section>
+
 				</section>
 
 				<section id="photolithography">
