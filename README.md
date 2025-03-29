@@ -22,6 +22,6 @@ This presentation shows the fundamental process of semiconductor fabrication acr
 
 ## ✨ Features  
 
-- **Animated Process Flows**: WebM visualizations of the fabrication process
+- **Animated Process Flows**: WebM visualizations for each act.
 - **Concept-First Design**: Each slide isolates one core idea (e.g., "Why we oxidize" before "How we oxidize").
 - **Zero Math Terror**: Equations appear only when absolutely necessary, always paired with visual metaphors. 
