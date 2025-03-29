@@ -11,13 +11,13 @@ This presentation unveils the hidden ballet of semiconductor fabrication across 
 
 | Stage | Transformation | Key Alchemy |
 |-------|---------------|-------------|
-| 1️⃣ **Wafer Manufacturing** | Sand → Crystal → Mirror | Czochralski’s Dance |
+| 1️⃣ **Wafer Manufacturing** | Sand → Single-Crystal Silicon → Wafer | Czochralski method |
 | 2️⃣ **Oxidation** | Silicon + O₂ → SiO₂ Gatekeeper | Thermal Rituals |
 | 3️⃣ **Photolithography** | Light + Resist → Nanoscale Masks | UV Shadowplay |
-| 4️⃣ **Etching/Deposition** | Carving & Layering Atoms | Plasma Sculpting |
+| 4️⃣ **Etching** | Carving & Layering Atoms | Plasma Sculpting |
 | 5️⃣ **Doping** | Precision Impurity Injection | Quantum Gardening |
 | 6️⃣ **Metallization** | Neural Pathways Forged | Copper Veins |
-| 7️⃣ **Die Sorting** | Silicon Darwinism | Electron Trials |
+| 7️⃣ **EDS** | Silicon Darwinism | Electron Trials |
 | 8️⃣ **Packaging** | Chip → Civilization | Hermetic Sealing |
 
 ## ✨ Features  
