@@ -374,6 +374,32 @@ section.has-light-background, section.has-light-background h1, section.has-light
 }
 
 /*********************************************
+ * UPDATED / Image Container
+ *********************************************/
+
+ .image-container {
+  margin: 1rem auto;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    width: 80%;
+    max-width: none;
+  }
+}
+
+/*********************************************
  * UPDATED / Animation Container
  *********************************************/
 
