@@ -59,9 +59,8 @@
 				</section>
 
 				<section id="wafer">
-					<!-- Vertical stack container -->
 					<section>
-					  <h2>1. Wafer Manufacturing</h2>
+					  	<h2>1. Wafer Manufacturing</h2>
 						<div class="animation-container">
 							<video class="animation-media" autoplay muted loop playsinline>
 							  <source src="animation/0-WaferManufacturing.webm" type="video/webm">
@@ -87,25 +86,24 @@
 						<div style="margin-top: 0.5em;">
 							<p class="fragment fade-in question">Transforming <span class="highlight">quartzite (sand)</span> into metallurgical-grade silicon (98% pure)</p>
 							<p class="fragment fade-in answer" style="text-align: left;">
-								\[\text{SiC(s)} + \text{SiO}_2\text{(s)} \xrightarrow{} \text{Si(s)} + \text{SiO(g)} + \text{CO(g)}\]
+								\[\textbf{SiC(s)} + \textbf{SiO}_2\textbf{(s)} \xrightarrow{} \textbf{Si(s)} + \textbf{SiO(g)} + \textbf{CO(g)}\]
 							</p>
 							<p class="fragment fade-in question">Impurity removal (for 99.99% purity) through volatile <span class="highlight">trichlorosilane</span> formation and <span class="highlight">fractional distillation</span></p>
 							<p class="fragment fade-in answer" style="text-align: left;">
-								\[\text{Si(s)} + 3\text{HCl(g)} \xrightarrow{300^\circ\text{C}} \text{SiHCl}_3\text{(g)} + \text{H}_2\text{(g)}\]
+								\[\textbf{Si(s)} + 3\textbf{HCl(g)} \xrightarrow{300^\circ\text{C}} \textbf{SiHCl}_3\textbf{(g)} + \textbf{H}_2\textbf{(g)}\]
 							</p>
 							<p class="fragment fade-in question"><span class="highlight">Hydrogen reduction</span> reaction for preparing EGS</p>
 							<p class="fragment fade-in answer" style="text-align: left;">
-								\[\text{SiHCl}_3\text{(g)} + \text{H}_2\text{(g)} \xrightarrow{} \text{Si(s)} + 3\text{HCl(g)}\]
+								\[\textbf{SiHCl}_3\textbf{(g)} + \textbf{H}_2\textbf{(g)} \xrightarrow{} \textbf{Si(s)} + 3\textbf{HCl(g)}\]
 							</p>
 					</section>
 					
-					<section>
-					  <h3>Crystal Growth</h3>
+					<section style="text-align: left;">
+					  	<h3>Crystal Growth</h3>
 					</section>
 
-					<section>
-					  <h3>Wafer Slicing & Testing</h3>
-					  <p>Chemical-mechanical planarization...</p>
+					<section style="text-align: left;">
+					  	<h3>Wafer Slicing & Testing</h3>
 					</section>
 				</section>
 
@@ -262,7 +260,7 @@
 				},
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu, RevealMath.MathJax2  ],
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu, RevealMath.MathJax2 ],
 
 				menu: {
 					side: 'left',
@@ -284,38 +282,39 @@
 					delayInit: false,
 					openOnInit: false,
 					loadIcons: true
-				}
-			});
-
-			Reveal.addEventListener('slidechanged', function(event) {
-			// Handle videos in the current slide
-			const currentVideos = event.currentSlide.querySelectorAll('video');
-			currentVideos.forEach(video => {
-				video.currentTime = 0; // Reset playback
-				video.play().catch(e => console.log("Autoplay prevented:", e));
-			});
-
-			// Pause videos in previous slide
-			if (event.previousSlide) {
-				const prevVideos = event.previousSlide.querySelectorAll('video');
-				prevVideos.forEach(video => video.pause());
 			}
 			});
 
 			Reveal.addEventListener('slidechanged', function(event) {
-			// Reset and play all videos in current slide
-			const currentSlideVideos = event.currentSlide.querySelectorAll('video[data-reveal-video]');
-			currentSlideVideos.forEach(video => {
-				if (video.readyState > 0) { // Only if loaded
-				video.currentTime = 0;
-				video.play();
-				} else {
-				video.addEventListener('loadedmetadata', () => {
-					video.currentTime = 0;
-					video.play();
+				// Handle videos in the current slide
+				const currentVideos = event.currentSlide.querySelectorAll('video');
+				currentVideos.forEach(video => {
+					video.currentTime = 0; // Reset playback
+					video.play().catch(e => console.log("Autoplay prevented:", e));
 				});
+
+				// Pause videos in previous slide
+				if (event.previousSlide) {
+					const prevVideos = event.previousSlide.querySelectorAll('video');
+					prevVideos.forEach(video => video.pause());
 				}
 			});
+
+			Reveal.addEventListener('slidechanged', function(event) {
+				// Reset and play all videos in current slide
+				const currentSlideVideos = event.currentSlide.querySelectorAll('video[data-reveal-video]');
+				currentSlideVideos.forEach(video => {
+					if (video.readyState > 0) { // Only if loaded
+						video.currentTime = 0;
+						video.play();
+					} 
+					else {
+						video.addEventListener('loadedmetadata', () => {
+						video.currentTime = 0;
+						video.play();
+						});
+					}
+				});
 			});
 		</script>
 	</body>
