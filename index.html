@@ -262,7 +262,7 @@
 				},
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu ],
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu, RevealMath.MathJax2  ],
 
 				menu: {
 					side: 'left',
@@ -284,7 +284,7 @@
 					delayInit: false,
 					openOnInit: false,
 					loadIcons: true
-			}
+				}
 			});
 
 			Reveal.addEventListener('slidechanged', function(event) {
