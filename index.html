@@ -20,26 +20,6 @@
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 
-		<style>
-			table {
-			  font-family: arial, sans-serif;
-			  border-collapse: collapse;
-			  width: 100%;
-			  border-top: 1px solid #133E87;
-			  border-bottom: 1px solid #133E87;
-			  border-collapse: collapse;
-			}
-
-			td, th {
-			  border: 1px solid #133E87;
-			  text-align: left;
-			  padding: 8px;
-			}
-
-			tr:nth-child(even) {
-			  background-color: #133E87;
-			}
-		</style>
 	</head>
 	<body>
 		<div class="reveal">
@@ -117,56 +97,41 @@
 						</div>
 					</section>
 
-					<section>
+					<section style="text-align: left;">
 						<h3>Why oxidize?</h3>
-						<table>
-							<tr>
-								<td>Si has dangling bonds</td>
-								<td>SiO₂ creates bonds and passivates Si</td>
-							</tr>
-							<tr>
-								<td>We need doping masks and etch masks</td>
-								<td>SiO₂ blocks dopant diffusion</td>
-							</tr>
-							<tr>
-								<td>The wafer might break</td>
-								<td>SiO₂ is a shield</td>
-							</tr>
-						</table>
+						<p class="fragment fade-in question">Silicon $\textbf{(Si)}$ has <span class="highlight">dangling</span> bonds and surface defects that can <span class="highlight">trap</span> charges.</p>
+						<p class="fragment fade-in answer">$\textbf{SiO}_2$ passivates the $\textbf{Si}$ surface by bonding with dangling $\textbf{Si}$ bonds.</p>
+
+						<p class="fragment fade-in question">Oxidation acts as an <span class="highlight">investment</span>!</p>
+						<p class="fragment fade-in answer">It facilitates making masks for doping and etching, which is critical to the fabrication process.</p>
+
+						<p class="fragment fade-in question"><span>$\textbf{Si}$</span> is <span class="highlight">fragile</span> and may break during handling.</p>
+						<p class="fragment fade-in answer">$\textbf{SiO}_2$ is a shield against environmental contaminants and damages.</p>
 					</section>
 
-					<section>
+					<section style="text-align: left;">
 						<h3>Growth Methods</h3>
-						<h4 align="left">Thermal Oxidation</h4>
-						<ul>
-							<li>The most common method</li>
-							<li>Involves heating silicon wafers in an oxygen-rich or steam environment</li>
-						</ul>
+						<p class="fragment fade-in question">Thermal Oxidation</p>
+						<p class="fragment fade-in answer">The most widely used method</p>
+						<p class="fragment fade-in answer">Involves heating silicon wafers in an oxygen-rich or steam environment</p>
 					</section>
 
-					<section>
-						<div align="left">
-							<h4>I. Dry Oxidation (O₂ Environment)</h4>
-							Si + O₂ &#8594 SiO₂<br>
-							<ul>
-								<li>High-quality, dense SiO₂</li>
-								<li>Used for thin gate oxides</li>
-								<li>Slow growth<br><br></li>
-							</ul>
+					<section style="text-align: left;">
+						<p class="fragment fade-in question">$\textbf{I.}$ Dry Oxidation ($\textbf{O}_2$ Environment)</p>
+						<p class="fragment fade-in answer">$\textbf{Si} + \textbf{O}_2\xrightarrow{} \textbf{SiO}_2$</p>
+						<p class="fragment fade-in answer">High-quality, dense $\textbf{SiO}_2$</p>
+						<p class="fragment fade-in answer">Ideal for thin gate oxides</p>
+						<p class="fragment fade-in answer">Slow growth</p>
 
-							<h4>II. Wet Oxidation (H₂O / Steam Environment)</h4>
-							Si + 2H₂O &#8594 SiO₂ + 2H₂<br>
-							<ul>
-								<li>Steam introduced via H₂ + O₂ → H₂O</li>
-								<li>Less density and more defects</li>
-								<li>Thicker oxides</li>
-								<li>3 to 5 times faster</li>
-							</ul>
-						</div>
+						<p class="fragment fade-in question">$\textbf{II.}$ Wet Oxidation ($\textbf{H}_2\textbf{O}$ / Steam Environment)</p>
+						<p class="fragment fade-in answer">$\textbf{Si} + \textbf{2H}_2\textbf{O}\xrightarrow{} \textbf{SiO}_2 + \textbf{2H}_2$</p>
+						<p class="fragment fade-in answer">Less density and more defects</p>
+						<p class="fragment fade-in answer">Thicker oxides</p>
+						<p class="fragment fade-in answer">3 to 5 times faster</p>
 					</section>
 
-					<section>
-						<h4 align="left">Other Methods</h4>
+					<section style="text-align: left;">
+						<h4>Other Growth Methods</h4>
 						<table>
 							<tr>
 								<th>Name</th>
@@ -191,16 +156,15 @@
 						</table>
 					</section>
 
-					<section>
+					<section style="text-align: left;">
 						<h3>Growth Kinetics: The Deal-Grove Model</h3>
-						tₒₓ² + A tₒₓ = B (t + τ)<br><br>
-						<div align="left">
-							<ul>
-								<li>tₒₓ = oxide thickness </li>
-								<li>A, B = rate constants</li>
-								<li>τ = initial native oxide correction</li>
-							</ul>
-						</div>
+						<p class="fragment fade-in question"> $$ \textbf{t}_{ox}^2 + \textbf{At}_{ox} = \textbf{B(t + τ)} $$
+
+						<p class="fragment fade-in answer">$\textbf{t}_{ox} = $ oxide thickness</p>
+
+						<p class="fragment fade-in answer">$\textbf{A} , \textbf{B} = $ rate constants</p>
+
+						<p class="fragment fade-in answer">$\textbf{τ} = $ initial native oxide correction</p>
 					</section>
 
 				</section>

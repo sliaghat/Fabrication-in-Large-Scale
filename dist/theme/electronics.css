@@ -1,7 +1,7 @@
 /**
  * Solarized Dark theme for reveal.js.
  * Author: Achim Staebler
- * (Some new updates by sliaghat)
+ * (Some new updates by sliaghat & Parmida-Hooshang)
  */
 @import url(./fonts/league-gothic/league-gothic.css);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
@@ -244,37 +244,10 @@ section.has-light-background, section.has-light-background h1, section.has-light
   white-space: pre;
 }
 
-.reveal table {
-  margin: auto;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.reveal table th {
-  font-weight: bold;
-}
-
-.reveal table th,
-.reveal table td {
-  text-align: left;
-  padding: 0.2em 0.5em 0.2em 0.5em;
-  border-bottom: 1px solid;
-}
-
-.reveal table th[align=center],
-.reveal table td[align=center] {
-  text-align: center;
-}
-
-.reveal table th[align=right],
-.reveal table td[align=right] {
-  text-align: right;
-}
-
-.reveal table tbody tr:last-child th,
-.reveal table tbody tr:last-child td {
-  border-bottom: none;
-}
+/*********************************************
+ * The default table styles have been removed.
+ * Check the update made to the end of this file.
+ *********************************************/
 
 .reveal sup {
   vertical-align: super;
@@ -455,6 +428,46 @@ section.has-light-background, section.has-light-background h1, section.has-light
 .highlight {
   color: #FFD700;
   font-style: italic;
+}
+
+/*********************************************
+ * UPDATED / TABLE
+ *********************************************/
+
+.reveal table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  color: rgb(162, 213, 250); /* Default text color */
+  background-color: rgba(0, 43, 54, 0.7);
+  border: 2px solid #cb4b16;
+  font-size: 0.9em; 
+  font-weight: 650;
+  letter-spacing: 0.03em; 
+}
+
+.reveal table th {
+  background-color: #b5890030;
+  color: #eef9b7 !important;
+  font-style: italic;
+  padding: 10px;
+  border-bottom: 2px solid #cb4b16;
+  border-top: 2px solid #cb4b16;
+}
+
+.reveal table td {
+  padding: 8px 12px;
+  border: 2px solid #586e75; /* Subtle grid lines */
+}
+
+.reveal table tr:nth-child(odd) {
+  background-color: #b5890030;
+}
+.reveal table tr:nth-child(even) {
+  background-color: rgba(0, 128, 128, 0.3);
+}
+
+.reveal table tr:hover {
+  background-color: rgba(88, 110, 117, 0.3);
 }
 
 
