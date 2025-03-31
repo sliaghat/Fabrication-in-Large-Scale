@@ -59,9 +59,8 @@
 				</section>
 
 				<section id="wafer">
-					<!-- Vertical stack container -->
 					<section>
-					  <h2>1. Wafer Manufacturing</h2>
+					  	<h2>1. Wafer Manufacturing</h2>
 						<div class="animation-container">
 							<video class="animation-media" autoplay muted loop playsinline>
 							  <source src="animation/0-WaferManufacturing.webm" type="video/webm">
@@ -69,17 +68,42 @@
 						</div>
 					</section>
 
-					<section>
-					  <h3>Silicon Preparation</h3>
-					</section>
-					
-					<section>
-					  <h3>Crystal Growth</h3>
+					<section style="text-align: left;">
+						<h3>First Things First!</h3>
+						<div style="margin-top: 0.5em;">
+							<p class="fragment fade-in question">What's the <span class="highlight">#1</span> requirement for wafer manufacturing?</p>
+							<p class="fragment fade-in answer">Ultra-pure silicon! (99.99% pure or better)</p>
+							<p class="fragment fade-in question">Why is <span class="highlight">ultra-purity</span> non-negotiable?</p>
+							<p class="fragment fade-in answer">For reliability, high-performance and precise doping.</p>
+							<p class="fragment fade-in answer">Even nanoscale impurities can make a wafer unusable!</p>	
+							<p class="fragment fade-in question">How to make <span class="highlight">electronic-grade silicon (EGS)</span> from sand?</p>
+							<p class="fragment fade-in answer">Through some chemical magic!</p>
+						</div>
 					</section>
 
-					<section>
-					  <h3>Wafer Slicing & Testing</h3>
-					  <p>Chemical-mechanical planarization...</p>
+					<section style="text-align: left;">
+					  	<h3>EGS Preparation</h3>
+						<div style="margin-top: 0.5em;">
+							<p class="fragment fade-in question">Transforming <span class="highlight">quartzite (sand)</span> into metallurgical-grade silicon (98% pure)</p>
+							<p class="fragment fade-in answer" style="text-align: left;">
+								\[\text{SiC(s)} + \text{SiO}_2\text{(s)} \xrightarrow{} \text{Si(s)} + \text{SiO(g)} + \text{CO(g)}\]
+							</p>
+							<p class="fragment fade-in question">Impurity removal (for 99.99% purity) through volatile <span class="highlight">trichlorosilane</span> formation and <span class="highlight">fractional distillation</span></p>
+							<p class="fragment fade-in answer" style="text-align: left;">
+								\[\text{Si(s)} + 3\text{HCl(g)} \xrightarrow{300^\circ\text{C}} \text{SiHCl}_3\text{(g)} + \text{H}_2\text{(g)}\]
+							</p>
+							<p class="fragment fade-in question"><span class="highlight">Hydrogen reduction</span> reaction for preparing EGS</p>
+							<p class="fragment fade-in answer" style="text-align: left;">
+								\[\text{SiHCl}_3\text{(g)} + \text{H}_2\text{(g)} \xrightarrow{} \text{Si(s)} + 3\text{HCl(g)}\]
+							</p>
+					</section>
+					
+					<section style="text-align: left;">
+					  	<h3>Crystal Growth</h3>
+					</section>
+
+					<section style="text-align: left;">
+					  	<h3>Wafer Slicing & Testing</h3>
 					</section>
 				</section>
 
@@ -217,6 +241,7 @@
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
 		<script src="plugin/menu/menu.js"></script>
+		<script src="/plugin/math/math.js"></script>
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
@@ -224,8 +249,18 @@
 			Reveal.initialize({
 				hash: true,
 
+				mathjax2: {
+					config: 'TeX-AMS_HTML-full',
+					TeX: {
+						Macros: {
+							R: '\\mathbb{R}',
+							degC: '^\\circ\\text{C}' // For temperature symbols
+						}
+					}
+				},
+
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu ],
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu, RevealMath.MathJax2 ],
 
 				menu: {
 					side: 'left',
