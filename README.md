@@ -11,7 +11,7 @@ This presentation shows the fundamental process of semiconductor fabrication acr
 
 | Stage | Transformation | Key Alchemy |
 |-------|---------------|-------------|
-| 1️⃣ **Wafer Manufacturing** | Sand → Single-Crystal Silicon → Wafer | Czochralski method |
+| 1️⃣ **Wafer Manufacturing** | Sand → Single-Crystal Silicon → Wafer | Crystal Growth |
 | 2️⃣ **Oxidation** | - | - |
 | 3️⃣ **Photolithography** | - | - |
 | 4️⃣ **Etching** | - | - |
