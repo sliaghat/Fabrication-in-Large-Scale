@@ -13,7 +13,7 @@ This presentation shows the fundamental process of semiconductor fabrication acr
 |-------|---------------|-------------|
 | 1️⃣ **Wafer Manufacturing** | Sand → Single-Crystal Silicon → Wafer | Crystal Growth |
 | 2️⃣ **Oxidation** | - | - |
-| 3️⃣ **Photolithography** | - | - |
+| 3️⃣ **Photolithography** | Blank Oxidized Wafer → Patterned Circuit Blueprint | Optical Patterning |
 | 4️⃣ **Etching** | - | - |
 | 5️⃣ **Doping** | - | - |
 | 6️⃣ **Metallization** | - | - |
