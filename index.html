@@ -441,8 +441,7 @@
 					loadIcons: true,
 					view: 'scroll',
 					scrollProgress: true,
-  					scrollLayout: 'compact',
-					fragments: !isMobileDevice()
+  					scrollLayout: 'compact'
 				}
 			});
 
@@ -477,6 +476,28 @@
 					}
 				});
 			});
+
+			// Detect mobile devices
+			function isMobileDevice() {
+				return (typeof window.orientation !== "undefined") || 
+					(navigator.userAgent.indexOf('IEMobile') !== -1);
+			}
+
+			// Disable fragments on mobile
+			if (isMobileDevice()) {
+				document.addEventListener('DOMContentLoaded', function() {
+					// Remove all fragment classes and make them visible immediately
+					document.querySelectorAll('.fragment').forEach(function(fragment) {
+						fragment.classList.remove('fragment');
+						fragment.style.opacity = '1';
+						fragment.style.visibility = 'visible';
+						fragment.style.transform = 'none';
+					});
+					
+					// Disable fragment navigation
+					Reveal.configure({ fragments: false });
+				});
+			}
 		</script>
 	</body>
 </html>
