@@ -437,11 +437,9 @@
 					autoOpen: true,
 					delayInit: false,
 					openOnInit: false,
-					loadIcons: true,
 					touch: true,
-					hideInactiveCursor: true,
-					showNotes: false
-			}
+					loadIcons: true
+				}
 			});
 
 			Reveal.addEventListener('slidechanged', function(event) {
@@ -458,7 +456,7 @@
 					prevVideos.forEach(video => video.pause());
 				}
 			});
-
+			
 			Reveal.addEventListener('slidechanged', function(event) {
 				// Reset and play all videos in current slide
 				const currentSlideVideos = event.currentSlide.querySelectorAll('video[data-reveal-video]');
