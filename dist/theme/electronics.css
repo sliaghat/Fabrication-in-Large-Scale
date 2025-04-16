@@ -339,19 +339,17 @@ section.has-light-background, section.has-light-background h1, section.has-light
   margin-bottom: 10px;
 }
 
-.menu-container a {
-  display: table;       /* Shrink-wraps content */
-  margin-bottom: 1px;   /* Spacing between items */
-  padding: 5px 0;
-  white-space: nowrap;  /* Prevents text wrapping */
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
 }
 
-/* Text shine effect */
 .menu-item {
-  position: relative;
-  display: inline-block;
-  color: #fff; /* Default text color */
-  transition: all 0.4s ease;
+  font-size: 0.9em;
+  padding: 8px 0;
+  white-space: normal;
+  line-height: 1.4;
 }
 
 /* Shine effect on hover */
@@ -477,5 +475,39 @@ section.has-light-background, section.has-light-background h1, section.has-light
 @media print {
   .backgrounds {
     background-color: var(--r-background-color);
+  }
+}
+
+/* Add to your CSS */
+@media (max-width: 768px) {
+  :root {
+    --r-main-font-size: 28px;
+    --r-heading1-size: 2.5em;
+    --r-heading2-size: 1.8em;
+  }
+  
+  .question { font-size: 0.8em; }
+  .answer { font-size: 0.65em; }
+}
+
+
+@media (max-width: 768px) {
+  .animation-container {
+    height: 30vh;
+  }
+  
+  img, video {
+    max-width: 100% !important;
+    max-height: 50vh !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .reveal table {
+    font-size: 0.6em;
+  }
+  
+  .reveal table td {
+    padding: 4px 6px;
   }
 }
