@@ -16,7 +16,7 @@ This presentation shows the fundamental process of semiconductor fabrication acr
 | 3️⃣ **Photolithography** | Blank Oxidized Wafer → Patterned Circuit Blueprint | Optical Patterning |
 | 4️⃣ **Etching & Doping** | - | - |
 | 5️⃣ **Deposition & Metallization** | - | - |
-| 6️⃣ **EDS & Packaging** | - | - |
+| 6️⃣ **EDS & Packaging** | Raw Dies → Protected Functional Chips | Quality Assurance |
 
 ## ✨ Features  
 
