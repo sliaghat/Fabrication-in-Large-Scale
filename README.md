@@ -12,10 +12,10 @@ This presentation shows the fundamental process of semiconductor fabrication acr
 | Stage | Transformation | Key Alchemy |
 |-------|---------------|-------------|
 | 1️⃣ **Wafer Manufacturing** | Sand → Single-Crystal Silicon → Wafer | Crystal Growth |
-| 2️⃣ **Oxidation** | - | - |
+| 2️⃣ **Oxidation** | Bare Silicon → Insulated SiO₂ Surface | Thermal Growth |
 | 3️⃣ **Photolithography** | Blank Oxidized Wafer → Patterned Circuit Blueprint | Optical Patterning |
-| 4️⃣ **Etching & Doping** | - | - |
-| 5️⃣ **Deposition & Metallization** | - | - |
+| 4️⃣ **Etching & Doping** | Uniform Layers → Selective Structures | Material Subtraction/Addition |
+| 5️⃣ **Deposition & Metallization** | Isolated Components → Connected Circuits | Thin-Film Layering |
 | 6️⃣ **EDS & Packaging** | Raw Dies → Protected Functional Chips | Quality Assurance |
 
 ## ✨ Features  
