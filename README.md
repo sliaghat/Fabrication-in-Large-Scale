@@ -3,7 +3,7 @@
 *A [Reveal.js](http://lab.hakim.se/reveal-js/) journey through the fundamental process of IC fabrication*  
 
 ## 🌐 Live Presentation  
-[![GitHub Pages](https://img.shields.io/badge/Explore-Slides-royalblue?style=for-the-badge&logo=github)](https://sliaghat.github.io/Fabrication-in-Large-Scale)  
+[![GitHub Pages](https://img.shields.io/badge/Explore-Slides-0aa2fad?style=for-the-badge&logo=github)](https://sliaghat.github.io/Fabrication-in-Large-Scale) 
 
 ## 🔬 The Nano-Symphony  
 
